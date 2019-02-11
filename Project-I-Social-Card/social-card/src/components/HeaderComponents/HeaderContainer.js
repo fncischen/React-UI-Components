@@ -9,9 +9,9 @@ class HeaderContainer extends React.Component {
     
     return(
         <div>
-        <ImageThumbnail thumbnail={this.props.thumbnail} />
-        <HeaderTitle title = {this.props.title} />
-        <HeaderContent content = {this.props.content} />
+        <ImageThumbnail thumbnail={this.props.headerInfo.thumbnail} />
+        <HeaderTitle title = {this.props.headerInfo.title} />
+        <HeaderContent content = {this.props.headerInfo.content} />
         </div>
         );
     }

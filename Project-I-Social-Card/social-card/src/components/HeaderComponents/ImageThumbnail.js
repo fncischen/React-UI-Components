@@ -4,7 +4,7 @@ import HeaderContainer from './HeaderContainer';
 
 class ImageThumbnail extends React.Component {
     render() {
-        return this.props.image;
+        return this.props.thumbnail;
     }
 }
 
