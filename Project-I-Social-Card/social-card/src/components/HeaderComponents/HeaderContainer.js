@@ -1,5 +1,8 @@
 import React from 'react';
 import './Header.css';
+import ImageThumbnail from "./ImageThumbnail";
+import HeaderTitle from "./HeaderTitle";
+import HeaderContent from "./HeaderContent";
 
 class HeaderContainer extends React.Component {
     render() { 
@@ -14,7 +17,4 @@ class HeaderContainer extends React.Component {
     }
 }
 
-// place all relevant info here for 
-
-
-ReactDOM.render(<HeaderContainer headerInfo={HEADERINFO} />, document.getElementById("root"))
+export default HeaderContainer;

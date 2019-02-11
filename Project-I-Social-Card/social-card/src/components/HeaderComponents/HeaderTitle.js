@@ -1,8 +1,11 @@
 import React from 'react';
 import './Header.css';
+import HeaderContainer from './HeaderContainer';
 
 class HeaderTitle extends React.Component {
     render() {
-        return <h1> {this.props.title} </h1>;
+        return this.props.title;
     }
 }
+
+export default HeaderTitle; 

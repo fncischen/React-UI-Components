@@ -1,8 +1,11 @@
 import React from 'react';
 import './Header.css';
+import HeaderContainer from './HeaderContainer';
 
 class ImageThumbnail extends React.Component {
     render() {
-        return <img> {this.props.image} </img>;
+        return this.props.image;
     }
 }
+
+export default ImageThumbnail;
