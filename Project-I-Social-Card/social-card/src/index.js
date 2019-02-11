@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import HeaderContainer from './components/HeaderComponents/HeaderContainer';
+import CardContainer from './components/CardComponents/CardContainer';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -13,3 +14,13 @@ const HeaderInfo = {
 }
 
 ReactDOM.render(<HeaderContainer headerInfo={HeaderInfo} />, document.getElementById("root"))
+
+const CardInfo = {
+    bannerImage: <img src="https://tk-assets.lambdaschool.com/fcd75197-7d12-46ec-bc9e-4130f34822fa_reactbackground.png"></img>,
+    cardContent: 
+    <div>
+    <h3>Get started with React</h3><p>"React makes it painless to create interactive UIs. Design simple views for each state in your application</p><footer><a href="reactjs.org">reactjs.org</a></footer>
+    </div>
+}
+
+ReactDOM.render(<CardContainer cardInfo={CardInfo} />, document.getElementById("root"));
