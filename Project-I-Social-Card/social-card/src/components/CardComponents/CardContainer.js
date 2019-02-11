@@ -5,9 +5,9 @@ import CardContent from './CardContent';
 
 class CardContainer extends React.Component {
     render() {
-        
+
         return (
-            <div>
+            <div className="Card">
                 <CardBanner bannerImage = {this.props.cardInfo.bannerImage}/>
                 <CardContent cardContent = {this.props.cardInfo.cardContent} />
             </div>

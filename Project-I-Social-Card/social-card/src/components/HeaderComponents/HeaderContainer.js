@@ -8,10 +8,15 @@ class HeaderContainer extends React.Component {
     render() { 
     
     return(
-        <div>
+        <div className="header">
         <ImageThumbnail thumbnail={this.props.headerInfo.thumbnail} />
+
+        <div className="header-content">
         <HeaderTitle title = {this.props.headerInfo.title} />
         <HeaderContent content = {this.props.headerInfo.content} />
+
+        </div>
+        
         </div>
         );
     }
