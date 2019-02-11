@@ -11,3 +11,7 @@ body {
   align-items: center;
   margin: 0 auto;
 }
+
+.reactElement {
+  width: 50%;
+}

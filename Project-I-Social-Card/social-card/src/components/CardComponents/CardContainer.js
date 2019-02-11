@@ -7,7 +7,7 @@ class CardContainer extends React.Component {
     render() {
 
         return (
-            <div className="Card">
+            <div className="card">
                 <CardBanner bannerImage = {this.props.cardInfo.bannerImage}/>
                 <CardContent cardContent = {this.props.cardInfo.cardContent} />
             </div>
