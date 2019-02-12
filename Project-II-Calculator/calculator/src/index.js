@@ -26,14 +26,16 @@ class Calculator extends React.Component {
                     <div className ="left-side">
             
                         <ActionButton text={this.props.calculator.clearButton} />
-
+                        
+                        <div className="calculator-buttons">
                         <CalculatorButtons buttons={this.props.calculator.numbers} />
+                        </div>
 
                         <ActionButton text={this.props.calculator.zeroButton} />
             
                      </div>
 
-                    <div className ="rigth-side">
+                    <div className ="right-side">
             
                         <OperationsButtons buttons={this.props.calculator.operations} />
             
@@ -52,7 +54,7 @@ const calculator_data = {
     numbers: [1,2,3,4,5,6,7,8,9],
     clearButton: "clear",
     zeroButton: 0,
-    operations: ["÷","×","+","-"]
+    operations: ["÷","×","+","-", "="]
 }
 
 ReactDOM.render(<Calculator calculator={calculator_data}/>, document.getElementById('root'));
