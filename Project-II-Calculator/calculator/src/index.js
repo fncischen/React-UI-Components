@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 
 import CalculatorDisplay from "../src/components/DisplayComponents/CalculatorDisplay";
 import ActionButton from "../src/components/ButtonComponents/ActionButton";
-import NumberButton from "../src/components/ButtonComponents/NumberButton";
 
 import CalculatorButtons from "../src/components/ButtonComponents/CalculatorButtons";
 import OperationsButtons from "../src/components/ButtonComponents/OperationsButtons";
@@ -19,7 +17,7 @@ class Calculator extends React.Component {
 
                 <div className="top">
 
-                     <CalculatorDisplay inputText={$this.props.calculator.inputText} />
+                     <CalculatorDisplay inputText={this.props.calculator.inputText} />
 
                 </div>
 
@@ -27,17 +25,17 @@ class Calculator extends React.Component {
             
                     <div className ="left-side">
             
-                        <ActionButton text={$this.props.calculator.clearButton} />
+                        <ActionButton text={this.props.calculator.clearButton} />
 
-                        <CalculatorButtons buttons={$this.props.calculator.buttons} />
+                        <CalculatorButtons buttons={this.props.calculator.numbers} />
 
-                        <ActionButton text={$this.props.calculator.zeroButton} />
+                        <ActionButton text={this.props.calculator.zeroButton} />
             
                      </div>
 
                     <div className ="rigth-side">
             
-                        <OperationsButtons buttons={$this.props.operations} />
+                        <OperationsButtons buttons={this.props.calculator.operations} />
             
                     </div>
 
@@ -51,7 +49,7 @@ class Calculator extends React.Component {
 
 
 const calculator_data = {
-    numbers: [1,2,3,4,5,6,7,8],
+    numbers: ["1","2","3","4","5","6","7","8","9"],
     clearButton: "clear",
     zeroButton: 0,
     operations: ["÷","×","+","-"],

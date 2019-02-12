@@ -5,6 +5,20 @@ import NumberButton from "./NumberButton";
 class CalculatorButtons extends React.Component {
     
     render() {
-        const listOfButtons = this.props.buttons;
+        const buttons = [];
+        const style = this.props.style;
+
+        console.log(this.props.buttons);
+
+        this.props.buttons.forEach((buttonText) =>
+            buttons.push(
+                <NumberButton text={buttonText} style={style} />
+            )
+        );
+
+        return(
+            {buttons}
+        )
     }
 }
+export default CalculatorButtons;
