@@ -2,6 +2,7 @@
     width: 33%;
     background-color: whitesmoke;
     height: 100px;
+    font-size: 48px;
 }
 
 .calculator .right-side .number-button {
@@ -11,4 +12,5 @@
 .actionButton {
     background-color: whitesmoke;
     height: 100px;
+    font-size: 48px;
 }
