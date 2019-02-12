@@ -6,7 +6,9 @@ import App from './App';
 import CalculatorDisplay from "../src/components/DisplayComponents/CalculatorDisplay";
 import ActionButton from "../src/components/ButtonComponents/ActionButton";
 import NumberButton from "../src/components/ButtonComponents/NumberButton";
+
 import CalculatorButtons from "../src/components/ButtonComponents/CalculatorButtons";
+import OperationsButtons from "../src/components/ButtonComponents/OperationsButtons";
 
 class Calculator extends React.Component {
 
@@ -35,7 +37,7 @@ class Calculator extends React.Component {
 
                     <div className ="rigth-side">
             
-            
+                        <OperationsButtons buttons={$this.props.operations} />
             
                     </div>
 
