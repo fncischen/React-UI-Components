@@ -10,15 +10,15 @@ class CalculatorButtons extends React.Component {
 
         console.log(this.props.buttons);
 
-        this.props.buttons.forEach((buttonText) =>
+        this.props.buttons.forEach(buttonText =>
             buttons.push(
                 <NumberButton text={buttonText} style={style} />
             )
         );
 
         return(
-            {buttons}
-        )
+            buttons
+        );
     }
 }
 export default CalculatorButtons;

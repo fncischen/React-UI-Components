@@ -49,10 +49,10 @@ class Calculator extends React.Component {
 
 
 const calculator_data = {
-    numbers: ["1","2","3","4","5","6","7","8","9"],
+    numbers: [1,2,3,4,5,6,7,8,9],
     clearButton: "clear",
     zeroButton: 0,
-    operations: ["÷","×","+","-"],
+    operations: ["÷","×","+","-"]
 }
 
 ReactDOM.render(<Calculator calculator={calculator_data}/>, document.getElementById('root'));

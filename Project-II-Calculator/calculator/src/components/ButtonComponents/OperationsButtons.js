@@ -9,14 +9,14 @@ class OperationsButtons extends React.Component {
         const buttons = [];
         const style = this.props.style;
 
-        this.props.buttons.forEach((button_operation) =>
+        this.props.buttons.forEach(button_operation =>
             buttons.push(
                 <NumberButton text={button_operation} style={style} />
             )
         );
 
         return (
-            {buttons}
+            buttons
         );
     }
 
