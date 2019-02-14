@@ -3,3 +3,15 @@ body {
   padding: 0.4rem;
   font-family: sans-serif;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.reactElement {
+  width: 50%;
+}

@@ -1,1 +1,29 @@
 /* All styles for your header Components live here */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+}
+
+.header-thumbnail {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.header-thumbnail img {
+    width: 50%;
+    
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    padding: 0.25%;
+}
